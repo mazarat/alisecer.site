@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-brand {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.headbang {
+  position: -webkit-sticky;
+  position: sticky;
+  padding: 25px 0;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  top: 0;
+  z-index: 1000;
+}
+
+.headactive {
+  -webkit-box-shadow: 0px 4px 24px -3px rgba(0, 0, 0, 0.55);
+          box-shadow: 0px 4px 24px -3px rgba(0, 0, 0, 0.55);
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  padding: 15px 0;
+  background-color: #423939;
+}
+
+.nav {
+  margin: auto;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 16px;
+}
+
+.nav a {
+  color: #fff;
+}
+
+.nav ul {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.nav ul li {
+  padding: 0 30px;
+}
+
+section {
+  height: 100vh;
+}
+
+.slide {
+  background-color: #423939;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  right: 0;
+}
+
+.slide1 {
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  grid-column: 1fr 1fr;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  max-width: 1200px;
+  height: 100%;
+}
+
+.fade {
+  font-size: 60px;
+  color: #fff;
+  -webkit-animation: fadeh1 0.5s ease-in;
+          animation: fadeh1 0.5s ease-in;
+}
+
+@-webkit-keyframes fadeh1 {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes fadeh1 {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+/*# sourceMappingURL=main.css.map */
